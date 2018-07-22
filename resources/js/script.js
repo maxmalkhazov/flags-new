@@ -13,7 +13,7 @@ let score = 0;
 const scoreDisplay = document.querySelector(".score");
 
 
-// REQUEST TO COUNTRIES API WHICH PUSHES ALL THE COUNTRUES INTO THE MAIN ARRAY
+// REQUEST TO COUNTRIES API WHICH PUSHES ALL THE COUNTRIES INTO THE MAIN ARRAY
 const getCountries = async () => {
     const mainArr = [];
     const response = await fetch('https://restcountries.eu/rest/v2/all');
@@ -30,7 +30,7 @@ const getCountries = async () => {
 }
 
 // CHOOSING OF RANDOM COUNTRY OUT OF THE MAIN ARRAY
-const random1 = async () => {
+const randomCountry = async () => {
     const game = await getCountries();
     const random = Math.floor(Math.random() * game.length);
     const country = game[random];
@@ -44,7 +44,7 @@ const random = async (num) => {
     let reachNum = false;
     let ctr = 0;
     while (!reachNum) {
-        let country = await random1();
+        let country = await randomCountry();
         if (arr.indexOf(country) === -1) {
             arr.push(country);
             ctr++;
@@ -169,8 +169,6 @@ const init = async () => {
     }
 }
 
-init();
-
 const aboutLink = () => {
     container.classList.toggle("setBack");
     about.classList.toggle("setForward");
@@ -197,3 +195,5 @@ scoreDisplay.addEventListener('click', function() {
 aboutButton.addEventListener("click", function() {
     aboutLink();
 });
+
+init();
