@@ -20,11 +20,20 @@
 	}
 
 	.message {
-		font-size: 80%;
+		font-size: 50%;
+		text-align: center;
 	}
 
 	.track {
-		font-size: 80%;
+		font-size: 50%;
+	}
+	
+	.reset {
+		font-size: 50%;
+	}
+	
+	.about {
+		font-size: 50%;
 	}
 
 	#footer {
@@ -35,6 +44,10 @@
 @media only screen and (max-width: 480px) {
 	h1, h2 {
 		font-size: 100%;
+    }
+    
+    .about {
+    	display: none;
     }
 
 	.square {
@@ -53,11 +66,16 @@
 	}
 
 	.message {
-		font-size: 50%;
+		font-size: 30%;
+		text-align: center;
 	}
 
 	.track {
-		font-size: 60%;
+		font-size: 40%;
+	}
+	
+	.reset {
+		font-size: 40%;
 	}
 
 	#footer {

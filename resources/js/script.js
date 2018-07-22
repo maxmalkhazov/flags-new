@@ -146,7 +146,7 @@ const init = async () => {
                 }
                 setTimeout(() => {
                     init();
-                }, 2000)
+                }, 1500)
             } else {
                 console.log(chosenCountry.flag);
                 console.log(clickedFlag2);
