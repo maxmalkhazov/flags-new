@@ -1,0 +1,66 @@
+@media only screen and (max-width: 767px) {
+
+	h1 {
+		font-size: 150%;
+    }
+
+	.square {
+		width: 18%;
+		margin-right: 5%;
+		height: 60px;
+    }
+
+	img.flagImg {
+		height: 60px;
+		width: 100px;
+	}
+
+	button {
+		font-size: 80%;
+	}
+
+	.message {
+		font-size: 80%;
+	}
+
+	.track {
+		font-size: 80%;
+	}
+
+	#footer {
+		font-size: 80%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	h1, h2 {
+		font-size: 100%;
+    }
+
+	.square {
+		width: 18%;
+		margin-right: 5%;
+		height: 50px;
+    }
+
+	img.flagImg {
+		height: 50px;
+		width: 75px;
+	}
+
+	button {
+		font-size: 60%;
+	}
+
+	.message {
+		font-size: 50%;
+	}
+
+	.track {
+		font-size: 60%;
+	}
+
+	#footer {
+		font-size: 50%;
+	}
+}
